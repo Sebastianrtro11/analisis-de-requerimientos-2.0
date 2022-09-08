@@ -1,0 +1,59 @@
+using System;
+
+namespace ejemplosDeRequisitos
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // ejercicio 1
+
+            int numero;
+            Console.WriteLine("ingrese numero ");
+            numero = Convert.ToInt32(Console.ReadLine());
+            int doblado = numero * 2;
+            int resultado = doblado * 25;
+            Console.WriteLine("el numero doblado es " + doblado + " y el resultado es: " + resultado);
+
+            // ejercicio 2
+
+            int num1, num2, num3, num4;
+            Console.WriteLine("ingrese nuemros a validar  ");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            num2 = Convert.ToInt32(Console.ReadLine());
+            num3 = Convert.ToInt32(Console.ReadLine());
+            num4 = Convert.ToInt32(Console.ReadLine());
+            int mult = num1 * num2 * num3 * num4;
+            int sum = num1 + num2 + num3 + num4;
+            int media = (num1 + num2 + num3 + num4) / 2;
+            Console.WriteLine("la multiplicacion es: " + mult + "la suma es:" + sum + "la media es: " + media);
+
+            //ejercicio 3
+
+            int numCuadrado = 821;
+            int cuadrado = numCuadrado * numCuadrado;
+            Console.WriteLine("el cuadrado es " + cuadrado);
+
+            //ejercicio 4 
+
+
+            int contador = 1;
+            int suma_consecutiva = 0;
+            while (contador <= 10)
+            {
+                suma_consecutiva = suma_consecutiva + contador;
+                contador = contador + 1;
+            }
+            Console.WriteLine("La suma de los números enteros del uno al 10 es " + suma_consecutiva);
+            Console.WriteLine("");
+
+            //ejercicio 5
+
+            int var_2;
+            for (var_2 = 0; var_2 <= 10; var_2++)
+            {
+                Console.WriteLine(Math.Pow(var_2, 2));
+            }
+        }
+    }
+}
